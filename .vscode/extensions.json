@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "AdonisJS.vscode-edge",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "jripouteau.adonis-vscode-extension",
+    "jripouteau.japa-vscode",
+    "yoavbls.pretty-ts-errors"
+  ]
+}
