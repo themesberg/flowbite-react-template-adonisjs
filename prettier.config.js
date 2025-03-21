@@ -1,9 +1,9 @@
-import config from '@adonisjs/prettier-config' assert { type: 'json' }
+import config from '@adonisjs/prettier-config'
 
 /** @type {import('prettier').Config} */
 export default {
   ...config,
-  plugins: ['prettier-plugin-tailwindcss'],
+  plugins: [...config.plugins, 'prettier-plugin-tailwindcss'],
   // tailwindcss
   tailwindAttributes: ['theme'],
   tailwindFunctions: ['twMerge', 'createTheme'],
