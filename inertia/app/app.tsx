@@ -1,10 +1,11 @@
 /// <reference path="../../adonisrc.ts" />
 /// <reference path="../../config/inertia.ts" />
 
-import '../css/app.css'
-import { createRoot } from 'react-dom/client'
-import { createInertiaApp } from '@inertiajs/react'
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
+import { createInertiaApp } from '@inertiajs/react'
+import { initThemeMode } from 'flowbite-react'
+import { createRoot } from 'react-dom/client'
+import '../css/app.css'
 
 const appName = import.meta.env.VITE_APP_NAME || 'AdonisJS'
 
@@ -21,3 +22,5 @@ createInertiaApp({
     createRoot(el).render(<App {...props} />)
   },
 })
+
+initThemeMode()
